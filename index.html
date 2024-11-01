@@ -148,9 +148,33 @@ Hey everyone! 🌟
                 <img src="./theme/logo1.png" alt="" class="footerLogo">
            
             <p>Love free-fire by lawrence12i</p>
-        </div>
-    </footer>
 
+<audio id="background-music" src="./audio/song1.mp3" preload="auto"></audio>
+
+
+<script>
+        // Function to play music after 10 seconds
+        function playMusic() {
+            const music = document.getElementById('background-music');
+            music.play();
+        }
+
+        // Set a timeout to play music after 10 seconds
+        setTimeout(playMusic, 90000);
+
+
+        let seconds = 0;
+        const timerElement = document.getElementById('timer');
+
+        const startTimer = () => {
+            seconds++;
+            timerElement.textContent = `Time: ${seconds} seconds`;
+        };
+
+        setInterval(startTimer, 1000);
+</script> 
+</body>
+</html>
     <script src="script.js"></script>
 </body>
 </html>
