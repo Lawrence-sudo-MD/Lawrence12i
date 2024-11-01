@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Forum&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary : #536942;
+    --secondary : #ffd936;
+    --white : #efefef;
+}
+
+        /* Smooth background color animation */
+        @keyframes backgroundColorChange {
+            0% { background-color: #ff5757; }
+            25% { background-color: #57ff9c; }
+            50% { background-color: #5785ff; }
+            75% { background-color: #ff57da; }
+            100% { background-color: #ff5757; }
+			125% {background-color:  #57ffd8}
+        }
+
+body {
+    font-family: "DM Sans", sans-serif;
+    color: var(--primary);
+}
+
+#main {
+    background-image: url(./theme/main.png);
+    min-height: 70vh;
+    background-position: bottom center;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.container {
+    max-height: 1200px;
+    padding: 16px;
+    margin: auto;
+}
+
+section {
+    margin: 80px auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 28px;
+    align-items: center;
+}
+
+.nav-list a {
+    color: var(--white);
+}
+
+.btn-primary a {
+    color: var(--primary);
+}
+
+.btn {
+    padding: 12px 20px;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-secondary {
+    border: 2px solid var(--white);
+    color: var(--white);
+    font-weight: bold;
+}
+
+.btn-primary {
+    border: none;
+    background: var(--secondary);
+    color: var(--white);
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    color: var(--white);
+}
+
+.main-content .intro-heading {
+    font-size: 30px;
+}
+
+.main-content .main-heading {
+    font-size: 80px;
+    margin-top: 20px;
+}
+
+.main-content p {
+    max-width: 700px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+#info {
+    background: #f1f2fa;
+    padding: 50px 16px;
+}
+
+.info-container h2 {
+    font-size: 25px;
+    text-align: left;
+}
+
+.info-text {
+    text-align: left;
+    font-size: 15px;
+    
+}
+
+.section-title h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.section-title .line {
+    width: 150px;
+    height: 4px;
+    border: 10px;
+    background: var(--secondary);
+    margin: auto;
+}
+
+
+.services {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.service {
+    width: 350px;
+}
+
+.service img {
+    max-width: 100%;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.service img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    margin-top: -60px;
+}
+
+footer .container {
+    display: flex;
+    padding: 20px 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    list-style: none;
+}
+
+#link {
+    background: #f1f2fa;
+    padding: 40px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#link .link-head {
+    display: flex;
+    flex-direction: column;
+}
+
+.link-body p {
+    margin-top: 10px;
+}
+
+.link-body a {
+    color: var(--white);
+}
+
+.link-body .btn-primary {
+    animation: backgroundColorChange 10s infinite;
+}
+
+#contact {
+    background: #f1f2fa;
+    padding: 10px 16px;
+}
+
+.contact-head {
+    font-size: 10px;
+    text-align: left;
+}
+
+.contact-body {
+    font-size: 12px;
+    text-align: justify;
+    gap: 100px;
+    display: flex;
+}
+
+#testimonial {
+    background: #f1f2fa;
+}
+
+#testimonial .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    gap: 30px;
+    padding: 50px 16px;
+}
+
+#testimonial h3 {
+    font-size: 30px;
+    font-family: "Forum", sans-serif;
+    text-align: center;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#about-us .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 120px;
+}
+
+#about-us .container .about-content {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: start;
+}
+
+#about-us .container .about-content h1 {
+    font-family: "Forum", sans-serif;
+    font-size: 30px;
+}
+
+#questions {
+    min-height: 500px;
+    background-image: url(./theme/main-2.png);
+    background-position: center;
+    background-size: cover;
+	 
+}
+
+#questions .container {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    text-align: cover;
+}
+
+#questions h1 {
+    font-size: 50px;
+}
+
+
+@media screen and (max-width:520px) {
+    .main-content .intro-heading {
+        font-size: 32px;
+    }
+
+    .main-content .main-heading {
+        font-size: 36px;
+        margin-top: -10px;
+    }
+
+    .main-content p {
+        max-width: 900px;
+        margin-bottom: 10px;
+        font-size: 13px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .nav-list {
+        gap: 10px;
+        font-size: 10px;
+    }
+    
+    .btn-secondary {
+        font-size: 10px;
+    }
+
+    .btn-secondary {
+        padding: 7px 7px;
+        background: transparent;
+        outline: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .logo {
+        max-width: 65px;
+    }
+
+    .footer .container {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .footerLogo {
+        max-width: 80px;
+        align-content: center;
+        gap: 40px;
+    }
+
+    .footer-links {
+        gap: 6px;
+        font-size: 11px;
+
+    }
+
+    footer p {
+        font-size: 11px;
+        max-width: 90px;
+    }
+
+    .info-container h2 {
+        font-size: 22px;
+    }
+
+    .contact-body {
+        font-size: 12px;
+        text-align: justify;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #about-us .container {
+        flex-direction: column;
+        gap: 30px;
+		margin-bottom: 30px;
+    }
+
+    #link {
+        margin-top: 650px;
+    }
+
+    #testimonial h3 {
+        font-size: 20px;
+    }
+	
+	#testimonial {
+		margin-top: 150px;
+	}
+
+	#info {
+		margin-top: 30px
+	}
+	
+	.main-content .intro-heading {
+    font-size: 20px;
+}
+
+   .main-content .main-heading {
+    font-size: 30px;
+    margin-top: 10px;
+	margin-bottom: 10px;
+}
+	
+#questions h1  {
+		font-size: 32px;
+	    text-align: center;
+	}
+	
+#questions p {
+		text-align: center;
+	}
+	
+
